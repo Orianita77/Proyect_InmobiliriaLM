@@ -1,0 +1,170 @@
+/* Reset de estilos básico */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: candara, sans-serif;
+    background-color: rgb(188, 255, 248)
+}
+
+header {
+    background-color:rgb(135, 255, 243);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(0, 237, 213);
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Función al pasar el maus*/
+
+nav ul li .dropdown-content :hover {
+    background-color: turquoise;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* Estilos para el logo en el encabezado */
+.logo {
+    width: 160px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    float: left; 
+}
+
+.Localidad {
+    width: 130px; 
+    height: auto; 
+    margin-right: 10px; 
+    float: left; 
+}
+
+.Mapa {
+    width: 130px; 
+    height: auto; 
+    margin-right: 10px; 
+    float: right; 
+}
+
+
+
+
+/* Estilos para el contenedor de la galería de imágenes */
+#gallerySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para cada contenedor de imagen */
+.image-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 10px;
+}
+
+/* Estilos para mostrar la imagen */
+.image-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para las imágenes */
+.image-container img {
+    max-width: 200px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 8px; /* Añadir bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Añadir sombra */
+}
+
+
+/* Estilos para las imágenes cuando se agrandan */
+.image-container img:hover {
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+
+
+
+
+
+
+
+
